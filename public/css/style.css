@@ -7,7 +7,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(assets/Log-in.png);
+    background-image: url(../assets/Log-in.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,4 +152,14 @@ input:not(:placeholder-shown):not(:focus) {
 .password-wrapper {
     position: relative;
     width: 100%;
+}
+#statusText {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #646464;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    /* min-height: 20px; */
 }
