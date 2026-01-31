@@ -73,3 +73,35 @@ registerForm.addEventListener('submit', async function (e) {
         console.error("Lỗi Fetch:", error);
     }
 });
+// --- Xử lý Gửi Form Đăng Nhập ---
+const loginForm = document.getElementById('login-form');
+
+if (loginForm) { // Kiểm tra nếu đang ở trang login thì mới chạy code này
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        try {
+            const response = await fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert("Đăng nhập thành công!");
+                // Chuyển hướng sang trang Dashboard
+                window.location.href = 'dashboard.html'; 
+            } else {
+                statusText.innerText = data.message;
+                statusText.style.color = "red";
+            }
+        } catch (error) {
+            console.error("Lỗi kết nối:", error);
+        }
+    });
+}

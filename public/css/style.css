@@ -163,3 +163,7 @@ input:not(:placeholder-shown):not(:focus) {
     font-weight: 400;
     /* min-height: 20px; */
 }
+a {
+    text-decoration: none;
+    color: #04D5D5;
+}
