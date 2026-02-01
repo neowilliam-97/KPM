@@ -1,0 +1,48 @@
+:root {
+    /* color */
+    --color-primary: #00D9D9;
+    --color-secondary: #00A1A1;
+    --color-grey-01: #1a1a1a;
+    --color-grey-02: #646464;
+    --color-grey-03: #cccccc;
+    --color-grey-04: #e6e6e6;
+    --color-grey-05: #f9f9f9;
+    --color-grey-06: #ffffff;
+    --color-placeholder: #b3b3b3;
+    --color-tertiary-01: #E2FDFD;
+    --color-tertiary-02: #1B9AAA;
+    --color-tertiary-03: #162E4D;
+    --color-tertiary-04: #D24F53;
+    --color-tertiary-05: #22C55E;
+    --color-tertiary-06: #FFD901;
+    --color-tertiary-07: #D21751;
+    --color-tertiary-08: #FF934F;
+    --color-tertiary-09: #8E94F2;
+    --color-gradient: linear-gradient(266deg, #5FE8B5 0%, #00D9D9 100%);
+
+    /* typography */
+    --font-base: "SF Pro";
+    --font-size-body-1: 16px;
+    --font-size-body-2: 14px;
+    --font-size-h1: 32px;
+    --font-size-h2: 28px;
+    --font-size-h3: 24px;
+    --font-size-h4: 18px;
+    --font-size-btn: 14px;
+    --font-size-sm: 12px;
+
+    /* spacing */
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-16: 16px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-64: 64px;
+    --space-80: 80px;
+
+    /* radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+}

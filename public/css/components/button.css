@@ -1,0 +1,46 @@
+/* base */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 80px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: 'SF Pro';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.3ms ease;
+}
+/* variant */
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-grey-06);
+}
+.btn--primary:hover {
+    background-color: rgba(4, 213, 213, 0.60);
+    color: var(--color-grey-06);
+}
+.btn--secondary {
+    background-color: var(--color-tertiary-01);
+    color: var(--color-grey-06);
+}
+.btn--secondary:hover {
+    background-color: #C7F7F7;
+    color: var(--color-primary);
+}
+.btn--grey {
+    background-color: rgba(26, 26, 26, 0.05);
+    color: var(--color-grey-01);
+}
+.btn--grey:hover {
+    background-color: rgba(26, 26, 26, 0.15);
+    color: var(--color-grey-01);
+}
+/* states */
+.btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
