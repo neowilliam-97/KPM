@@ -1,6 +1,6 @@
 @import url(./style.css);
-@import url(./login.css);
-@import url(./register.css);
+@import url(./pages/login.css);
+@import url(./features/register.css);
 @import url(./components/button.css);
 @import url(./base/variables.css);
 @import url(./base/reset.css);

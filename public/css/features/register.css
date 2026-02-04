@@ -2,7 +2,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(../assets/Log-in.png);
+    background-image: url(/public/assets/Log-in.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

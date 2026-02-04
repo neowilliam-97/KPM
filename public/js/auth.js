@@ -90,14 +90,14 @@ if (loginForm) {
             const data = await response.json();
 
             if (response.ok) {
-                alert("Đăng nhập thành công!");
+                alert("Login successful!");
                 window.location.href = 'dashboard.html'; 
             } else {
                 statusText.innerText = data.message;
                 statusText.style.color = "red";
             }
         } catch (error) {
-            console.error("Lỗi kết nối:", error);
+            console.error("Connection error:", error);
         }
     });
 }

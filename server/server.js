@@ -14,8 +14,8 @@ app.use(express.static('public'));
 
 // --- CONNECT DATABASE ---
 mongoose.connect('mongodb://localhost:27017/registerDB')
-    .then(() => console.log('✅ Đã kết nối MongoDB thành công!'))
-    .catch(err => console.error('❌ Lỗi kết nối MongoDB:', err));
+    .then(() => console.log('MongoDB connection successfully established.!'))
+    .catch(err => console.error('MongoDB connection error:', err));
 
 // --- SCHEMA & MODEL ---
 const userSchema = new mongoose.Schema({
@@ -35,7 +35,7 @@ app.post('/register', async (req, res) => {
         await newUser.save();
         res.status(201).json({ message: "Registration successful!" });
     } catch (error) {
-        // Lỗi 11000 là lỗi trùng lặp (Duplicate Key) trong MongoDB
+        // Lỗi 11000: lỗi trùng lặp (Duplicate Key) trong MongoDB
         if (error.code === 11000) {
             return res.status(400).json({ message: "Error: The username already exists." });
         }
@@ -43,7 +43,7 @@ app.post('/register', async (req, res) => {
     }
 });
 
-// 2. Route Đăng Nhập (Login) - Thêm mới cho bạn
+// 2. Route Đăng Nhập (Login)
 app.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;
@@ -63,5 +63,5 @@ app.post('/login', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
+    console.log(`The server is running at http://localhost:${PORT}`);
 });
